@@ -41,8 +41,9 @@ public class ExerciseService {
     }
 
     public ExerciseResponseDto getById(long id){
-        Exercise exercise = exerciseRepository.findById(id).orElse(null);
-        //maybe change this to throw an exception if none is found
+        Exercise exercise = exerciseRepository.findById(id)
+                .orElseThrow(() -> new EntityNotFoundException("Exercise not found"));
+        //maybe change this to return null if no exercise is found
         return modelMapper.map(exercise, ExerciseResponseDto.class);
     }
 

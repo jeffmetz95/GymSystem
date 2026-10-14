@@ -8,10 +8,10 @@ public record ExerciseResponseDto(
         String description,
         int weight,
         int sets,
-        int reps,
-        List<PlanResponseDto> plans,
-        List<GoalResponseDto> goals,
-        List<RecordResponseDto> records,
-        List<SessionResponseDto> sessions
+        int reps//,
+//        List<PlanResponseDto> plans,
+//        List<GoalResponseDto> goals,
+//        List<RecordResponseDto> records,
+//        List<SessionResponseDto> sessions
 ) {
 }

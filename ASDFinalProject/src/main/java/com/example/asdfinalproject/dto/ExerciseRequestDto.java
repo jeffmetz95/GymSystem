@@ -7,10 +7,10 @@ public record ExerciseRequestDto(
         String description,
         int weight,
         int sets,
-        int reps,
-        List<PlanRequestDto> plans,
-        List<GoalRequestDto> goals,
-        List<RecordRequestDto> records,
-        List<SessionRequestDto> sessions
+        int reps//,
+//        List<PlanRequestDto> plans,
+//        List<GoalRequestDto> goals,
+//        List<RecordRequestDto> records,
+//        List<SessionRequestDto> sessions
 ) {
 }
